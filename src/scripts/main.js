@@ -13,10 +13,10 @@ const newTable = () => {
   const rows = table.rows.length;
   const cols = table.rows[0].cells.length;
 
-  addColumn.disaibled = rows >= maxSize;
-  addRow.disaibled = cols >= maxSize;
-  removeColumn.disaibled = rows <= minSize;
-  removeRow.disaibled = cols <= minSize;
+  addColumnBtn.disabled = cols >= maxSize;
+  addRowBtn.disabled = rows >= maxSize;
+  removeColumnBtn.disabled = cols <= minSize;
+  removeRowbtn.disabled = rows <= minSize;
 };
 
 const addRow = () => {
